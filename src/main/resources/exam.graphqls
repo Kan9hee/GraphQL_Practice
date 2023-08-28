@@ -1,0 +1,17 @@
+type User{
+    id:ID!
+    name:String!
+    date:String!
+    status:Status
+}
+
+type Status{
+    index:ID!
+    class:String!
+    level:Int
+}
+
+type Query{
+    getUserList:[User]
+    getUser(id:ID!):User
+}
