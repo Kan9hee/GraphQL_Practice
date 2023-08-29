@@ -31,7 +31,7 @@ dependencies {
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	implementation("com.graphql-java-kickstart:graphql-spring-boot-starter")
+	implementation("com.graphql-java-kickstart:graphql-spring-boot-starter:15.0.0")
 	implementation("mysql:mysql-connector-java")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 }

@@ -6,12 +6,17 @@ type User{
 }
 
 type Status{
-    index:ID!
-    class:String!
+    id:ID!
+    type:String!
     level:Int
 }
 
 type Query{
     getUserList:[User]
     getUser(id:ID!):User
+}
+
+type Mutation{
+    createUser(name:String!,date:String!,statusId:ID!):User
+    changeStatus(statusId:ID!,type:String!):Status
 }
